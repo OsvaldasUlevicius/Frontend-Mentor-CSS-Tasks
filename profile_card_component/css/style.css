@@ -1,0 +1,109 @@
+@import "reset.css";
+
+/* =========================================================
+   BASE STYLES 
+========================================================= */
+
+html { font-size: 62.5%; }
+
+body { 
+    background: url(../img/bg-pattern-top.svg) no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    color: hsl(229, 23%, 23%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.8rem;
+    height: 100vh;
+}
+
+/* =========================================================
+   HEADINGS 
+========================================================= */
+
+h6 { font-weight: 700; }
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.card {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .card-header {
+    background: url(../img/bg-pattern-card.svg) no-repeat;
+    height: 14rem;
+    position: relative;
+    width: 100%;
+}
+    
+.card .card-header img {
+    border: 0.5rem solid #FFFFFF;
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    width: 12.5rem;
+}
+
+.card .card-body {
+    background-color: #FFFFFF;
+    padding-top: 10rem;
+    text-align: center;
+    width: 35rem;
+}
+
+.card .card-body > h6 { margin-bottom: 1.6rem; }
+
+.card .info-text {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.card p.info-text { font-size: 1.4rem; }
+
+.card-body-statistics {
+    border-top: 0.1rem solid #F1F1F1;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.4rem;
+    padding: 2.4rem 0 2.4rem 0;
+}
+
+.card .card-body-statistics div { display: inline-block; }
+
+.card .card-body-statistics h6 {
+    text-transform: uppercase;
+    line-height: 2.4rem;
+}
+
+@media (min-width: 350px) {
+    .card .card-header { 
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        width: 35rem;
+    }
+
+    .card .card-body {
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+}
+
+/* =========================================================
+   ATTRIBUTION
+========================================================= */
+
+.attribution { 
+    bottom: 0;
+    font-size: 1.2rem; 
+    left: 50%;
+    line-height: 1.6rem;
+    position: absolute;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+}
+.attribution a { color: hsl(228, 45%, 44%); }
